@@ -18,7 +18,9 @@ int main(){
     player->setKeys(key1, key2, key3, key4);
     Uint32 lastEvent=0;
     Mix_Chunk *music=Mix_LoadWAV("../assets/Dadbattle_Inst.wav");
+    Mix_Chunk *voices=Mix_LoadWAV("../assets/Dadbattle_Voices.wav");
     Mix_PlayChannel(-1, music, 0);
+    Mix_PlayChannel(-1, voices, 0);
 
     int game=1;
     while(game){
